@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  color: #6d5d4b;
+  font-family: "Montserrat", sans-sarif; }
+
+.u-mb-large {
+  margin-bottom: 6rem; }
+
+.u-mb-medium {
+  margin-bottom: 4rem; }
+
+.u-mb-small {
+  margin-bottom: 2rem; }
+
+.u-mt-medium {
+  margin-top: 4rem; }
+
+.u-mt-small {
+  margin-top: 2rem; }
+
+.navigation {
+  position: fixed;
+  right: -32rem;
+  height: 100%;
+  width: 40rem;
+  background-image: linear-gradient(to top, rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)), url(/dist/img/nav-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: right 0.5s cubic-bezier(1, 0, 0, 1); }
+  .navigation__logo-box {
+    display: flex;
+    align-items: center; }
+  .navigation__logo {
+    width: 4.5rem; }
+  .navigation__heading {
+    font-size: 2.5rem;
+    font-family: "Josefin Sans", sans-sarif;
+    font-weight: 400;
+    color: #c69963; }
+  .navigation__search {
+    position: relative; }
+  .navigation__search-input {
+    border: none;
+    width: 30rem;
+    padding: 1.4rem 4rem;
+    outline: none;
+    font-family: "Josefin Sans", sans-sarif;
+    color: #b28451;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    border-radius: 10rem;
+    background-color: rgba(16, 29, 44, 0.5);
+    border: 1px solid #c69963; }
+  .navigation__search-input:focus {
+    background-color: rgba(16, 29, 44, 0.8); }
+  .navigation__search-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #b28451;
+    font-size: 1.5rem;
+    outline: none; }
+  .navigation__list {
+    height: 30rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .navigation__link {
+    font-family: "Montserrat", sans-sarif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 0.1rem; }
+  .navigation__link::before, .navigation__link::after {
+    content: "";
+    height: 0.2rem;
+    width: 0;
+    background-color: #c69963;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1); }
+  .navigation__link::before {
+    top: 0.8rem;
+    left: -3.5rem; }
+  .navigation__link::after {
+    top: 0.8rem;
+    right: -3.5rem; }
+  .navigation__link:hover::before, .navigation__link:hover::after {
+    width: 3rem; }
+  .navigation__copyright {
+    font-size: 1.5rem;
+    color: #c69963; }
+
+.sidebar {
+  height: 100%;
+  width: 8rem;
+  background-color: #b28451;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10; }
+  .sidebar__menu-icon {
+    cursor: pointer; }
+  .sidebar__menu-icon-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #fff;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s; }
+  .sidebar__icon-list {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    list-style: none; }
+  .sidebar__icon-item {
+    text-align: center; }
+  .sidebar__icon-link {
+    font-size: 2rem;
+    color: #fff; }
+  .sidebar__icon-link-1:hover {
+    color: #3b5998; }
+  .sidebar__icon-link-2:hover {
+    color: #f09433; }
+  .sidebar__icon-link-3:hover {
+    color: #00acee; }
+  .sidebar__icon-link-4:hover {
+    color: #db4a39; }
+  .sidebar__copyright-text {
+    font-size: 1.4rem;
+    color: #fff; }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; }
+  .navbar__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-2 {
+    opacity: 0; }
+  .navbar__checkbox:checked ~ .navigation {
+    right: 8rem; }
+  .navbar__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-1 {
+    transform: rotate(-405deg) translate(-5px, 9px); }
+  .navbar__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-3 {
+    transform: rotate(405deg) translate(-5px, -9px); }

@@ -1,0 +1,112 @@
+.navigation {
+  position: fixed;
+  right: -32rem;
+  height: 100%;
+  width: 40rem;
+  background-image: linear-gradient(
+      to top,
+      rgba($color-secondary, 0.5),
+      rgba($color-secondary, 0.5)
+    ),
+    url(/dist/img/nav-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 4.5rem;
+  }
+  &__heading {
+    font-size: 2.5rem;
+    font-family: $font-display;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  &__search {
+    position: relative;
+  }
+  &__search-input {
+    border: none;
+    width: 30rem;
+    padding: 1.4rem 4rem;
+    outline: none;
+    font-family: $font-display;
+    color: $color-primary-dark;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    border-radius: 10rem;
+    background-color: rgba($color-secondary, 0.5);
+    border: 1px solid $color-primary;
+  }
+  &__search-input:focus {
+    background-color: rgba($color-secondary, 0.8);
+  }
+  &__search-btn {
+    position: absolute;
+    right: 2rem;
+    top: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: $color-primary-dark;
+    font-size: 1.5rem;
+    outline: none;
+  }
+
+  &__list {
+    height: 30rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: $font-regular;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $color-white;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 0.1rem;
+  }
+
+  &__link::before,
+  &__link::after {
+    content: "";
+    height: 0.2rem;
+    width: 0;
+    background-color: $color-primary;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+
+  &__link::before {
+    top: 0.8rem;
+    left: -3.5rem;
+  }
+
+  &__link::after {
+    top: 0.8rem;
+    right: -3.5rem;
+  }
+
+  &__link:hover::before,
+  &__link:hover::after {
+    width: 3rem;
+  }
+  &__copyright {
+    font-size: 1.5rem;
+    color: $color-primary;
+  }
+}

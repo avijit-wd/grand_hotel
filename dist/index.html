@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Montserrat:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="shortcut icon" href="/dist/img/crown.png" type="image.png" />
+    <title>Grand Hotel</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <input type="checkbox" class="navbar__checkbox" id="click" hidden />
+      <!-- sidebar -->
+      <div class="sidebar">
+        <label for="click">
+          <div class="sidebar__menu-icon u-mt-small">
+            <div
+              class="sidebar__menu-icon-line sidebar__menu-icon-line-1"
+            ></div>
+            <div
+              class="sidebar__menu-icon-line sidebar__menu-icon-line-2"
+            ></div>
+            <div
+              class="sidebar__menu-icon-line sidebar__menu-icon-line-3"
+            ></div>
+          </div>
+        </label>
+
+        <ul class="sidebar__icon-list">
+          <li class="sidebar__icon-item">
+            <a href="#" class="sidebar__icon-link sidebar__icon-link-1"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="sidebar__icon-item">
+            <a href="#" class="sidebar__icon-link sidebar__icon-link-2"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="sidebar__icon-item">
+            <a href="#" class="sidebar__icon-link sidebar__icon-link-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="sidebar__icon-item">
+            <a href="#" class="sidebar__icon-link sidebar__icon-link-4"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="sidebar__copyright u-mb-small">
+          <p class="sidebar__copyright-text">
+            &copy;2020
+          </p>
+        </div>
+      </div>
+      <!-- end of sidebar -->
+      <!-- navigation -->
+      <div class="navigation">
+        <div class="navigation__logo-box u-mt-medium">
+          <img src="/dist/img/crown.png" alt="logo" class="navigation__logo" />
+          <h3 class="navigation__heading">Grand Hotel</h3>
+        </div>
+
+        <form class="navigation__search">
+          <input
+            type="text"
+            placeholder="Search Hotel"
+            class="navigation__search-input"
+          />
+          <button class="navigation__search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Rooms</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Events</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Customers</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navigation__copyright u-mb-small">
+          <p>Grand Hotel &copy;2020. All right reserved</p>
+        </div>
+      </div>
+      <!-- end of navigation -->
+    </div>
+    <!--end of  navbar -->
+  </body>
+</html>

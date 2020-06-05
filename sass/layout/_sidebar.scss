@@ -1,0 +1,57 @@
+.sidebar {
+  height: 100%;
+  width: 8rem;
+  background-color: $color-primary-dark;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+
+  &__menu-icon {
+    cursor: pointer;
+  }
+
+  &__menu-icon-line {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $color-white;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s;
+  }
+
+  &__icon-list {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    list-style: none;
+  }
+  &__icon-item {
+    text-align: center;
+  }
+  &__icon-link {
+    font-size: 2rem;
+    color: $color-white;
+  }
+
+  &__icon-link-1:hover {
+    color: #3b5998;
+  }
+  &__icon-link-2:hover {
+    color: #f09433;
+  }
+  &__icon-link-3:hover {
+    color: #00acee;
+  }
+  &__icon-link-4:hover {
+    color: #db4a39;
+  }
+
+  &__copyright-text {
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+}

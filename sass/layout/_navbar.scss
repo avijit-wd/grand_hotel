@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  &__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-2 {
+    opacity: 0;
+  }
+
+  &__checkbox:checked ~ .navigation {
+    right: 8rem;
+  }
+  &__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-1 {
+    transform: rotate(-405deg) translate(-5px, 9px);
+  }
+  &__checkbox:checked ~ .sidebar .sidebar__menu-icon-line-3 {
+    transform: rotate(405deg) translate(-5px, -9px);
+  }
+}
